@@ -28,137 +28,109 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnBlanco = new System.Windows.Forms.Button();
+            this.btnPreventiva = new System.Windows.Forms.Button();
+            this.btnDetener = new System.Windows.Forms.Button();
+            this.btnIniciar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnRojo = new System.Windows.Forms.Button();
+            this.btnAmarillo = new System.Windows.Forms.Button();
+            this.btnVerde = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pbRojo2 = new System.Windows.Forms.PictureBox();
+            this.pbAmarillo2 = new System.Windows.Forms.PictureBox();
+            this.pbVerde2 = new System.Windows.Forms.PictureBox();
+            this.pbVerde4 = new System.Windows.Forms.PictureBox();
+            this.pbRojo4 = new System.Windows.Forms.PictureBox();
+            this.pbAmarillo4 = new System.Windows.Forms.PictureBox();
+            this.pbVerde3 = new System.Windows.Forms.PictureBox();
+            this.pbRojo3 = new System.Windows.Forms.PictureBox();
+            this.pbAmarillo3 = new System.Windows.Forms.PictureBox();
+            this.pbVerde1 = new System.Windows.Forms.PictureBox();
+            this.pbRojo1 = new System.Windows.Forms.PictureBox();
+            this.pbAmarillo1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRojo2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAmarillo2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVerde2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVerde4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRojo4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAmarillo4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVerde3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRojo3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAmarillo3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVerde1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRojo1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAmarillo1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnBlanco);
+            this.groupBox1.Controls.Add(this.btnPreventiva);
+            this.groupBox1.Controls.Add(this.btnDetener);
+            this.groupBox1.Controls.Add(this.btnIniciar);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnRojo);
+            this.groupBox1.Controls.Add(this.btnAmarillo);
+            this.groupBox1.Controls.Add(this.btnVerde);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(436, 26);
+            this.groupBox1.Location = new System.Drawing.Point(313, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(332, 112);
+            this.groupBox1.Size = new System.Drawing.Size(287, 196);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tiempos";
             // 
-            // button1
+            // btnBlanco
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(170, 51);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 55);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "0";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBlanco.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBlanco.Font = new System.Drawing.Font("Digital-7 Italic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBlanco.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnBlanco.Location = new System.Drawing.Point(197, 137);
+            this.btnBlanco.Name = "btnBlanco";
+            this.btnBlanco.Size = new System.Drawing.Size(84, 55);
+            this.btnBlanco.TabIndex = 16;
+            this.btnBlanco.Text = "1";
+            this.btnBlanco.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // btnPreventiva
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("DejaVu Serif Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(170, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Verde";
+            this.btnPreventiva.Location = new System.Drawing.Point(10, 154);
+            this.btnPreventiva.Name = "btnPreventiva";
+            this.btnPreventiva.Size = new System.Drawing.Size(130, 23);
+            this.btnPreventiva.TabIndex = 15;
+            this.btnPreventiva.Text = "Preventivas";
+            this.btnPreventiva.UseVisualStyleBackColor = true;
+            this.btnPreventiva.Click += new System.EventHandler(this.btnPreventiva_Click);
             // 
-            // pictureBox4
+            // btnDetener
             // 
-            this.pictureBox4.Image = global::Semaforo.Properties.Resources.calle1;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 43);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(400, 346);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
+            this.btnDetener.Location = new System.Drawing.Point(87, 125);
+            this.btnDetener.Name = "btnDetener";
+            this.btnDetener.Size = new System.Drawing.Size(93, 23);
+            this.btnDetener.TabIndex = 14;
+            this.btnDetener.Text = "Detener";
+            this.btnDetener.UseVisualStyleBackColor = true;
+            this.btnDetener.Click += new System.EventHandler(this.btnDetener_Click);
             // 
-            // pictureBox3
+            // btnIniciar
             // 
-            this.pictureBox3.Image = global::Semaforo.Properties.Resources.Rojo;
-            this.pictureBox3.Location = new System.Drawing.Point(521, 236);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 20);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Semaforo.Properties.Resources.Amrillo;
-            this.pictureBox2.Location = new System.Drawing.Point(468, 424);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 14);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Semaforo.Properties.Resources.Verde;
-            this.pictureBox1.Location = new System.Drawing.Point(521, 424);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 14);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Yellow;
-            this.button2.Location = new System.Drawing.Point(85, 51);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(55, 55);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "0";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(6, 51);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(55, 55);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "0";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("DejaVu Serif Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(81, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 19);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Amarillo";
+            this.btnIniciar.Location = new System.Drawing.Point(6, 125);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(75, 23);
+            this.btnIniciar.TabIndex = 13;
+            this.btnIniciar.Text = "Iniciar";
+            this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // label3
             // 
@@ -171,41 +143,284 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Rojo";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("DejaVu Serif Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(81, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 19);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Amarillo";
+            // 
+            // btnRojo
+            // 
+            this.btnRojo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRojo.Font = new System.Drawing.Font("Digital-7 Italic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRojo.ForeColor = System.Drawing.Color.Red;
+            this.btnRojo.Location = new System.Drawing.Point(6, 51);
+            this.btnRojo.Name = "btnRojo";
+            this.btnRojo.Size = new System.Drawing.Size(73, 55);
+            this.btnRojo.TabIndex = 10;
+            this.btnRojo.UseVisualStyleBackColor = false;
+            // 
+            // btnAmarillo
+            // 
+            this.btnAmarillo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAmarillo.Font = new System.Drawing.Font("Digital-7 Italic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAmarillo.ForeColor = System.Drawing.Color.Yellow;
+            this.btnAmarillo.Location = new System.Drawing.Point(85, 51);
+            this.btnAmarillo.Name = "btnAmarillo";
+            this.btnAmarillo.Size = new System.Drawing.Size(73, 55);
+            this.btnAmarillo.TabIndex = 9;
+            this.btnAmarillo.UseVisualStyleBackColor = false;
+            // 
+            // btnVerde
+            // 
+            this.btnVerde.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnVerde.Font = new System.Drawing.Font("Digital-7 Italic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerde.ForeColor = System.Drawing.Color.Lime;
+            this.btnVerde.Location = new System.Drawing.Point(170, 51);
+            this.btnVerde.Name = "btnVerde";
+            this.btnVerde.Size = new System.Drawing.Size(84, 55);
+            this.btnVerde.TabIndex = 8;
+            this.btnVerde.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("DejaVu Serif Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(170, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Verde";
+            // 
+            // pbRojo2
+            // 
+            this.pbRojo2.BackColor = System.Drawing.Color.Transparent;
+            this.pbRojo2.Image = global::Semaforo.Properties.Resources.red;
+            this.pbRojo2.Location = new System.Drawing.Point(205, 42);
+            this.pbRojo2.Name = "pbRojo2";
+            this.pbRojo2.Size = new System.Drawing.Size(15, 15);
+            this.pbRojo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRojo2.TabIndex = 3;
+            this.pbRojo2.TabStop = false;
+            this.pbRojo2.Visible = false;
+            // 
+            // pbAmarillo2
+            // 
+            this.pbAmarillo2.BackColor = System.Drawing.Color.Transparent;
+            this.pbAmarillo2.Image = global::Semaforo.Properties.Resources.Amrillo_preview_rev_1;
+            this.pbAmarillo2.Location = new System.Drawing.Point(223, 42);
+            this.pbAmarillo2.Name = "pbAmarillo2";
+            this.pbAmarillo2.Size = new System.Drawing.Size(15, 15);
+            this.pbAmarillo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAmarillo2.TabIndex = 2;
+            this.pbAmarillo2.TabStop = false;
+            this.pbAmarillo2.Visible = false;
+            // 
+            // pbVerde2
+            // 
+            this.pbVerde2.BackColor = System.Drawing.Color.Transparent;
+            this.pbVerde2.Image = global::Semaforo.Properties.Resources.green;
+            this.pbVerde2.Location = new System.Drawing.Point(239, 42);
+            this.pbVerde2.Name = "pbVerde2";
+            this.pbVerde2.Size = new System.Drawing.Size(15, 15);
+            this.pbVerde2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbVerde2.TabIndex = 1;
+            this.pbVerde2.TabStop = false;
+            // 
+            // pbVerde4
+            // 
+            this.pbVerde4.BackColor = System.Drawing.Color.Transparent;
+            this.pbVerde4.Image = global::Semaforo.Properties.Resources.green;
+            this.pbVerde4.Location = new System.Drawing.Point(239, 168);
+            this.pbVerde4.Name = "pbVerde4";
+            this.pbVerde4.Size = new System.Drawing.Size(15, 15);
+            this.pbVerde4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbVerde4.TabIndex = 5;
+            this.pbVerde4.TabStop = false;
+            // 
+            // pbRojo4
+            // 
+            this.pbRojo4.BackColor = System.Drawing.Color.Transparent;
+            this.pbRojo4.Image = global::Semaforo.Properties.Resources.red;
+            this.pbRojo4.Location = new System.Drawing.Point(205, 168);
+            this.pbRojo4.Name = "pbRojo4";
+            this.pbRojo4.Size = new System.Drawing.Size(15, 15);
+            this.pbRojo4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRojo4.TabIndex = 7;
+            this.pbRojo4.TabStop = false;
+            this.pbRojo4.Visible = false;
+            // 
+            // pbAmarillo4
+            // 
+            this.pbAmarillo4.BackColor = System.Drawing.Color.Transparent;
+            this.pbAmarillo4.Image = global::Semaforo.Properties.Resources.Amrillo_preview_rev_1;
+            this.pbAmarillo4.Location = new System.Drawing.Point(223, 168);
+            this.pbAmarillo4.Name = "pbAmarillo4";
+            this.pbAmarillo4.Size = new System.Drawing.Size(15, 15);
+            this.pbAmarillo4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAmarillo4.TabIndex = 6;
+            this.pbAmarillo4.TabStop = false;
+            this.pbAmarillo4.Visible = false;
+            // 
+            // pbVerde3
+            // 
+            this.pbVerde3.BackColor = System.Drawing.Color.Transparent;
+            this.pbVerde3.Image = global::Semaforo.Properties.Resources.green;
+            this.pbVerde3.Location = new System.Drawing.Point(69, 168);
+            this.pbVerde3.Name = "pbVerde3";
+            this.pbVerde3.Size = new System.Drawing.Size(15, 15);
+            this.pbVerde3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbVerde3.TabIndex = 8;
+            this.pbVerde3.TabStop = false;
+            // 
+            // pbRojo3
+            // 
+            this.pbRojo3.BackColor = System.Drawing.Color.Transparent;
+            this.pbRojo3.Image = global::Semaforo.Properties.Resources.red;
+            this.pbRojo3.Location = new System.Drawing.Point(35, 168);
+            this.pbRojo3.Name = "pbRojo3";
+            this.pbRojo3.Size = new System.Drawing.Size(15, 15);
+            this.pbRojo3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRojo3.TabIndex = 10;
+            this.pbRojo3.TabStop = false;
+            this.pbRojo3.Visible = false;
+            // 
+            // pbAmarillo3
+            // 
+            this.pbAmarillo3.BackColor = System.Drawing.Color.Transparent;
+            this.pbAmarillo3.Image = global::Semaforo.Properties.Resources.Amrillo_preview_rev_1;
+            this.pbAmarillo3.Location = new System.Drawing.Point(53, 168);
+            this.pbAmarillo3.Name = "pbAmarillo3";
+            this.pbAmarillo3.Size = new System.Drawing.Size(15, 15);
+            this.pbAmarillo3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAmarillo3.TabIndex = 9;
+            this.pbAmarillo3.TabStop = false;
+            this.pbAmarillo3.Visible = false;
+            // 
+            // pbVerde1
+            // 
+            this.pbVerde1.BackColor = System.Drawing.Color.Transparent;
+            this.pbVerde1.Image = global::Semaforo.Properties.Resources.green;
+            this.pbVerde1.Location = new System.Drawing.Point(69, 42);
+            this.pbVerde1.Name = "pbVerde1";
+            this.pbVerde1.Size = new System.Drawing.Size(15, 15);
+            this.pbVerde1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbVerde1.TabIndex = 11;
+            this.pbVerde1.TabStop = false;
+            // 
+            // pbRojo1
+            // 
+            this.pbRojo1.BackColor = System.Drawing.Color.Transparent;
+            this.pbRojo1.Image = global::Semaforo.Properties.Resources.red;
+            this.pbRojo1.Location = new System.Drawing.Point(35, 42);
+            this.pbRojo1.Name = "pbRojo1";
+            this.pbRojo1.Size = new System.Drawing.Size(15, 15);
+            this.pbRojo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRojo1.TabIndex = 13;
+            this.pbRojo1.TabStop = false;
+            this.pbRojo1.Visible = false;
+            // 
+            // pbAmarillo1
+            // 
+            this.pbAmarillo1.BackColor = System.Drawing.Color.Transparent;
+            this.pbAmarillo1.Image = global::Semaforo.Properties.Resources.Amrillo_preview_rev_1;
+            this.pbAmarillo1.Location = new System.Drawing.Point(53, 42);
+            this.pbAmarillo1.Name = "pbAmarillo1";
+            this.pbAmarillo1.Size = new System.Drawing.Size(15, 15);
+            this.pbAmarillo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAmarillo1.TabIndex = 12;
+            this.pbAmarillo1.TabStop = false;
+            this.pbAmarillo1.Visible = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Interval = 1000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // timer3
+            // 
+            this.timer3.Interval = 500;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Semaforo.Properties.Resources.calle1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(612, 247);
+            this.Controls.Add(this.pbVerde1);
+            this.Controls.Add(this.pbRojo1);
+            this.Controls.Add(this.pbAmarillo1);
+            this.Controls.Add(this.pbVerde3);
+            this.Controls.Add(this.pbRojo3);
+            this.Controls.Add(this.pbAmarillo3);
+            this.Controls.Add(this.pbVerde4);
+            this.Controls.Add(this.pbRojo4);
+            this.Controls.Add(this.pbAmarillo4);
+            this.Controls.Add(this.pbVerde2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pbRojo2);
+            this.Controls.Add(this.pbAmarillo2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Semaforo";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRojo2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAmarillo2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVerde2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVerde4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRojo4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAmarillo4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVerde3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRojo3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAmarillo3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVerde1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRojo1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAmarillo1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbVerde2;
+        private System.Windows.Forms.PictureBox pbAmarillo2;
+        private System.Windows.Forms.PictureBox pbRojo2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnVerde;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRojo;
+        private System.Windows.Forms.Button btnAmarillo;
+        private System.Windows.Forms.PictureBox pbVerde4;
+        private System.Windows.Forms.PictureBox pbRojo4;
+        private System.Windows.Forms.PictureBox pbAmarillo4;
+        private System.Windows.Forms.PictureBox pbVerde3;
+        private System.Windows.Forms.PictureBox pbRojo3;
+        private System.Windows.Forms.PictureBox pbAmarillo3;
+        private System.Windows.Forms.PictureBox pbVerde1;
+        private System.Windows.Forms.PictureBox pbRojo1;
+        private System.Windows.Forms.PictureBox pbAmarillo1;
+        private System.Windows.Forms.Button btnPreventiva;
+        private System.Windows.Forms.Button btnDetener;
+        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button btnBlanco;
+        private System.Windows.Forms.Timer timer3;
     }
 }
 
