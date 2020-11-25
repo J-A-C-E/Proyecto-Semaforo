@@ -30,6 +30,9 @@ namespace Semaforo
             intermitente = true;
             contadorMiliSegundo = 1;
             btnBlanco.Text = contadorMiliSegundo.ToString();
+            
+            intermitente2 = true;
+            norteSur = true;
 
             //Semaforo 1
             pbVerde1.Visible = true;
@@ -37,14 +40,14 @@ namespace Semaforo
             pbRojo1.Visible = false;
 
             //Semaforo 2
-            pbVerde2.Visible = true;
+            pbVerde2.Visible = false;
             pbAmarillo2.Visible = false;
-            pbRojo2.Visible = false;
+            pbRojo2.Visible = true;
 
             //Semaforo 3
-            pbVerde3.Visible = true;
+            pbVerde3.Visible = false;
             pbAmarillo3.Visible = false;
-            pbRojo3.Visible = false;
+            pbRojo3.Visible =true;
 
             //Semaforo 4
             pbVerde4.Visible = true;
@@ -71,69 +74,198 @@ namespace Semaforo
         }
 
         bool intermitente = true;
-        double contadorMiliSegundo = 1;        
- 
+        bool intermitente2 = true;
+        double contadorMiliSegundo = 1;
+        bool norteSur = true;
+
+        //Coloca las condiciones de los semaforos cuando sea NORTE-SUR
+        public void valoresNorteSur()
+        {
+           
+            //Semaforo 1
+            pbVerde1.Visible = true;
+            pbAmarillo1.Visible = false;
+            pbRojo1.Visible = false;
+
+            //Semaforo 2
+            pbVerde2.Visible = false;
+            pbAmarillo2.Visible = false;
+            pbRojo2.Visible = true;
+
+
+            //Semaforo 3
+            pbVerde3.Visible = false;
+            pbAmarillo3.Visible = false;
+            pbRojo3.Visible = true;
+
+            //Semaforo 4
+            pbVerde4.Visible = true;
+            pbAmarillo4.Visible = false;
+            pbRojo4.Visible = false;
+           
+        }
+
+        public void valoresEsteOeste()
+        {
+
+            //Semaforo 1
+            pbVerde1.Visible = false;
+            pbAmarillo1.Visible = false;
+            pbRojo1.Visible = true;
+
+            //Semaforo 2
+            pbVerde2.Visible = true;
+            pbAmarillo2.Visible = false;
+            pbRojo2.Visible = false;
+
+
+            //Semaforo 3
+            pbVerde3.Visible = true;
+            pbAmarillo3.Visible = false;
+            pbRojo3.Visible = false;
+
+            //Semaforo 4
+            pbVerde4.Visible = false;
+            pbAmarillo4.Visible = false;
+            pbRojo4.Visible = true;
+        }
+
 
         //TIMMER 1 PRENDE Y APAGA LOS SEMAFOROS
         private void timer1_Tick(object sender, EventArgs e)
         {
             contadorMiliSegundo = contadorMiliSegundo + 0.5;
             btnBlanco.Text = contadorMiliSegundo.ToString();
-   
-            //EVENTO 1 ENCENDIDO VERDE
-            if (contadorMiliSegundo < 15)
-            {
-                pbVerde1.Visible = true;
-                pbVerde4.Visible = true;
 
-            }
-
-            //EVENTO 2 PARPADEO VERDE
-            if (contadorMiliSegundo > 14.5 & contadorMiliSegundo < 18.5) 
+            if(norteSur)
             {
-                if (intermitente)
+                #region Norte Sur
+                //Coloca los Valores
+                //valoresNorteSur();
+
+                //EVENTO 1 ENCENDIDO VERDE
+                if (contadorMiliSegundo < 15)
                 {
                     pbVerde1.Visible = true;
                     pbVerde4.Visible = true;
-                    intermitente = false;
+
                 }
-                else
+
+                //EVENTO 2 PARPADEO VERDE
+                if (contadorMiliSegundo > 14.5 & contadorMiliSegundo < 18.5)
+                {
+                    if (intermitente)
+                    {
+                        pbVerde1.Visible = true;
+                        pbVerde4.Visible = true;
+                        intermitente = false;
+                    }
+                    else
+                    {
+                        pbVerde1.Visible = false;
+                        pbVerde4.Visible = false;
+                        intermitente = true;
+                    }
+                }
+
+                //EVENTO 3 Amarillo
+                if (contadorMiliSegundo == 18.5)
                 {
                     pbVerde1.Visible = false;
                     pbVerde4.Visible = false;
-                    intermitente = true;
+
                 }
-            }
 
-            //EVENTO 3 Amarillo
-            if (contadorMiliSegundo == 18.5)
+                if (contadorMiliSegundo > 18.5 & contadorMiliSegundo < 21.5)
+                {
+                    pbAmarillo1.Visible = true;
+                    pbAmarillo4.Visible = true;
+
+                }
+
+                //EVENTO 4 Rojo
+                if (contadorMiliSegundo == 21.5)
+                {
+                    pbAmarillo1.Visible = false;
+                    pbAmarillo4.Visible = false;
+
+                }
+
+                if (contadorMiliSegundo > 21.5 & contadorMiliSegundo < 24)
+                {
+                    pbRojo1.Visible = true;
+                    pbRojo4.Visible = true;
+                    //norteSur = false;
+
+                }
+                #endregion
+            }
+            else
             {
-               pbVerde1.Visible = false;
-               pbVerde4.Visible = false;
+                #region Este Oeste
+                //Coloca los valores
+               // valoresEsteOeste();
 
+                //EVENTO 1 ENCENDIDO VERDE
+                if (contadorMiliSegundo < 15)
+                {
+                    pbVerde2.Visible = true;
+                    pbVerde3.Visible = true;
+
+                }
+
+                //EVENTO 2 PARPADEO VERDE
+                if (contadorMiliSegundo > 14.5 & contadorMiliSegundo < 18.5)
+                {
+                    if (intermitente2)
+                    {
+                        pbVerde2.Visible = true;
+                        pbVerde3.Visible = true;
+                        intermitente2 = false;
+                    }
+                    else
+                    {
+                        pbVerde2.Visible = false;
+                        pbVerde3.Visible = false;
+                        intermitente2 = true;
+                    }
+                }
+
+                //EVENTO 3 Amarillo
+                if (contadorMiliSegundo == 18.5)
+                {
+                    pbVerde2.Visible = false;
+                    pbVerde3.Visible = false;
+
+                }
+
+                if (contadorMiliSegundo > 18.5 & contadorMiliSegundo < 21.5)
+                {
+                    pbAmarillo2.Visible = true;
+                    pbAmarillo3.Visible = true;
+
+                }
+
+                //EVENTO 4 Rojo
+                if (contadorMiliSegundo == 21.5)
+                {
+                    pbAmarillo2.Visible = false;
+                    pbAmarillo3.Visible = false;
+
+                }
+
+                if (contadorMiliSegundo > 21.5 & contadorMiliSegundo < 24)
+                {
+                    pbRojo2.Visible = true;
+                    pbRojo3.Visible = true;
+                    //norteSur = true;
+
+                }
+
+                #endregion
             }
 
-            if(contadorMiliSegundo > 18.5 & contadorMiliSegundo < 21.5)
-            {
-                pbAmarillo1.Visible = true;
-                pbAmarillo4.Visible = true;
 
-            }
-
-            //EVENTO 4 Rojo
-            if (contadorMiliSegundo == 21.5)
-            {
-                pbAmarillo1.Visible = false;
-                pbAmarillo4.Visible = false;
-
-            }
-
-            if (contadorMiliSegundo > 21.5 & contadorMiliSegundo < 24)
-            {
-                pbRojo1.Visible = true;
-                pbRojo4.Visible = true;
-
-            }
         }
 
         private void btnIniciar_Click(object sender, EventArgs e)
@@ -147,9 +279,11 @@ namespace Semaforo
         {
 
             Reiniciar();
+            valoresNorteSur();
             timer1.Stop();
             timer2.Stop();
             timer3.Stop();
+
 
         }
 
@@ -195,11 +329,26 @@ namespace Semaforo
 
             if (contador == 24) 
             {
-                Reiniciar();
+                //Reiniciar();
+                if(norteSur)
+                {
+                    Reiniciar();
+                    //COloca las condiciones para el semaforo siguiente
+                    valoresEsteOeste();
+                    norteSur = false;
+                }
+                else
+                {
+                    Reiniciar();
+                    valoresNorteSur();
+                    norteSur = true;
+                }
+                //Se tiene que reiniciar los relojes
             }
 
         }
 
+        
         private void btnPreventiva_Click(object sender, EventArgs e)
         {
             Reiniciar();
@@ -207,12 +356,33 @@ namespace Semaforo
             timer2.Stop();
             timer3.Start();
             btnVerde.Text = "";
+
+            //Semaforo 1
+            pbVerde1.Visible = false;
+            pbAmarillo1.Visible = false;
+            pbRojo1.Visible = false;
+
+            //Semaforo 2
+            pbVerde2.Visible = false;
+            pbAmarillo2.Visible = false;
+            pbRojo2.Visible = false;
+
+            //Semaforo 3
+            pbVerde3.Visible = false;
+            pbAmarillo3.Visible = false;
+            pbRojo3.Visible = false;
+
+            //Semaforo 4
+            pbVerde4.Visible = false;
+            pbAmarillo4.Visible = false;
+            pbRojo4.Visible = false;
+
+
         }
 
-        
+        //Intermitentes de amarillo 0
         private void timer3_Tick(object sender, EventArgs e)
         {
-
 
             if (intermitente)
             {
@@ -223,7 +393,7 @@ namespace Semaforo
 
                 intermitente = false;
                 btnAmarillo.Text = 0.ToString();
-   
+
 
 
             }
@@ -237,6 +407,9 @@ namespace Semaforo
                 intermitente = true;
                 btnAmarillo.Text = "";
             }
+
+
+
         }
     }
 }
