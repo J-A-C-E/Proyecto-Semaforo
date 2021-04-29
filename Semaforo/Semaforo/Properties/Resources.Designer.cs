@@ -103,6 +103,26 @@ namespace Semaforo.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cruce {
+            get {
+                object obj = ResourceManager.GetObject("cruce", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap crucesemaforo {
+            get {
+                object obj = ResourceManager.GetObject("crucesemaforo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap green {
             get {
                 object obj = ResourceManager.GetObject("green", resourceCulture);
@@ -136,6 +156,16 @@ namespace Semaforo.Properties {
         internal static System.Drawing.Bitmap Rojo_preview_rev_1 {
             get {
                 object obj = ResourceManager.GetObject("Rojo_preview_rev_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Semafo {
+            get {
+                object obj = ResourceManager.GetObject("Semafo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
